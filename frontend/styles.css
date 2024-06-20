@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.ticket-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ticket-holder img {
+    width: 150px;
+    height: auto;
+}
+
+.ticket-holder p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}

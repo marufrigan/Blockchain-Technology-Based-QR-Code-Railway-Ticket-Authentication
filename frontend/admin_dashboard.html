@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Admin Panel</h2>
+    </header>
+    <main>
+        <div class="ticket-box">
+            <form id="adminForm">
+                <label for="passengerName">Passenger Name:</label>
+                <input type="text" id="passengerName" required>
+                <label for="passengerNID">Passenger NID:</label>
+                <input type="text" id="passengerNID" required>
+                <label for="travelDate">Date of Travel:</label>
+                <input type="date" id="travelDate" required>
+                <label for="departure">Departure Station:</label>
+                <input type="text" id="departure" required>
+                <label for="arrival">Arrival Station:</label>
+                <input type="text" id="arrival" required>
+                <button type="button" id="generateTicket">Generate Blockchain Technology QR based Railway Ticket</button>
+            </form>
+            <div id="ticketDetails">
+                <p>Blockchain Address: <span id="blockchainAddress"></span></p>
+                <canvas id="qrCode"></canvas>
+                <button id="saveQrCode">Save QR Code</button>
+            </div>
+        </div>
+    </main>
+    <!-- Include Web3.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <!-- Include QRCode.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="admin_dashboard.js"></script>
+</body>
+</html>
