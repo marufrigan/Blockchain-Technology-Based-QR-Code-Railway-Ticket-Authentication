@@ -116,7 +116,7 @@ Verify the ticket by uploading the QR code image.
 
 
 **Contributors**
-Your Name (marufrigan)
+Maruf Farhan Rigan
 
 **License**
 This project is licensed under the MIT License - see the LICENSE file for details.
